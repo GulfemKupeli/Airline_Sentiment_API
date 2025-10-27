@@ -1,34 +1,26 @@
-# .gitignore içeriği
 
-# 1. Model Ağırlıkları ve Checkpoint'ler
-# BERT/Transformer'ın öğrenilmiş parametrelerini (çok büyük dosyalar) içerir.
-# Bu dosyaları Hugging Face Hub'da veya Drive'da tutuyoruz, GitHub'da değil.
 *.pt
 *.bin
 *.pth
 *.safetensors
-model.safetensors # BERT modelinizin ağırlık dosyası
+model.safetensors 
 
-# Ayrıca, Colab'de eğittiğiniz modelin çıktığı klasörü de tamamen yok sayın:
+
 results/
 local_bert_model/
 
-# 2. Python Ortam Dosyaları
-# Sanal ortamlar ve otomatik olarak oluşturulan dosyalar
 __pycache__/
 *.pyc
 .venv/
 venv/
 env/
 
-# 3. Veri Setleri ve Not Defteri Çıktıları
-# Yüklü veri setleri ve büyük çıktı dosyaları
 *.csv
 *.xlsx
 *.zip
 data/
 
-# 4. İşletim Sistemi ve IDE Dosyaları
 .DS_Store # Mac OS
 Thumbs.db # Windows
 .vscode/
+
